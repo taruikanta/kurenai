@@ -146,7 +146,7 @@ img {
   color: var(--font-color-white);
   position: absolute;
   top: 108px;
-  right: 160px;
+  left: 75%;
 }
 
 .p-first-view__heading {
@@ -233,4 +233,82 @@ img {
   display: block;
   color: #333;
   text-decoration: none;
+}
+.l-section {
+  margin-block-start: 176px;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../asetts/img/bg_cloud.svg);
+  background-size: cover;
+}
+
+.p-introduce {
+  background-image: url(../asetts/img/syokuninn\ 1.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  max-width: 1000px;
+  width: 100%;
+  margin-inline: auto;
+  position: relative;
+}
+
+.p-introduce__wrap {
+  margin-block-start: 216px;
+}
+
+.p-introduce__text-wrap {
+  position: absolute;
+  top: -112px;
+  left: 85%;
+  background-color: var(--font-color-white);
+  width: 102px;
+}
+
+.p-introduce__text-wrap:first-of-type {
+  max-height: 444px;
+  font-size: 18px;
+}
+
+.p-introduce__text-wrap:last-of-type {
+  max-height: 468px;
+}
+
+.p-introduce__text {
+  writing-mode: vertical-rl;
+  letter-spacing: 8px;
+  line-height: 26px;
+  width: 72px;
+  height: 100%;
+  margin-inline: auto;
+}
+
+.p-introduce__text .span {
+  text-align: center;
+}
+
+.p-introduce__text-wrap:last-of-type {
+  top: 80px;
+  left: 100px;
+}
+
+.p-introduce__text .span {
+  display: block;
+}
+
+.p-product__wrap {
+  margin-block-start: 332px;
+}
+
+.c-list {
+  display: flex;
+  column-gap: 50px;
+  align-items: center;
+  max-width: 1150px;
+  margin-inline: auto;
+}
+
+.p-product .c-list:last-of-type {
+  flex-direction: row-reverse;
+  margin-block-start: 45px;
 }
