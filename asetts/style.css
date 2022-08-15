@@ -29,7 +29,7 @@ img {
 
 .l-header-wrap {
   width: 100%;
-  position: sticky;
+  position: fixed;
   top: 50px;
   z-index: 999;
 }
@@ -179,6 +179,7 @@ img {
   width: 100%;
   position: absolute;
   top: 626px;
+  border-radius: 2px;
 }
 
 .p-news {
@@ -236,7 +237,6 @@ img {
 }
 .l-section {
   margin-block-start: 176px;
-  height: 100vh;
   width: 100%;
   background-image: url(../asetts/img/bg_cloud.svg);
   background-size: cover;
@@ -263,6 +263,7 @@ img {
   left: 85%;
   background-color: var(--font-color-white);
   width: 102px;
+  border-radius: 2px;
 }
 
 .p-introduce__text-wrap:first-of-type {
@@ -300,6 +301,28 @@ img {
   margin-block-start: 332px;
 }
 
+.p-product__title-wrap {
+  width: 72px;
+  height: 214px;
+  position: absolute;
+  top: -108px;
+  left: -16px;
+  background-color: var(--font-color-white);
+  z-index: 2;
+  border-radius: 2px;
+}
+
+.p-product__title {
+  font-family: var(--section-title-font);
+  font-size: 36px;
+  width: 36px;
+  margin-inline: auto;
+  text-align: center;
+  padding-block-start: 18px;
+  line-height: 56px;
+  font-weight: var(--font-weight-bold);
+}
+
 .c-list {
   display: flex;
   column-gap: 50px;
@@ -311,4 +334,44 @@ img {
 .p-product .c-list:last-of-type {
   flex-direction: row-reverse;
   margin-block-start: 45px;
+}
+
+.c-list__item {
+  position: relative;
+}
+
+.c-list__item:first-of-type {
+  max-width: 550px;
+  max-height: 550px;
+}
+
+.c-list__title-wrap {
+  width: 34px;
+  position: absolute;
+  top: 4%;
+  left: 82%;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.c-list__title {
+  writing-mode: vertical-rl;
+  margin-block: auto;
+  letter-spacing: 4px;
+  padding-inline: 10px;
+  font-size: 14px;
+  font-weight: var(--font-weight-bold);
+}
+
+.c-list__item .-main {
+  width: 52px;
+  left: 88%;
+}
+
+.c-list__item .-main .c-list__title {
+  font-size: 24px;
+}
+
+.c-list__item-group .c-list__item:last-of-type {
+  margin-block-start: 50px;
 }
